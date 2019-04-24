@@ -14,7 +14,7 @@ int main()
 	int yourScore = 250;
 
 	cout << "\nBefore the bad swap!\n ";
-	cout << "My score =" << myScore << " Your score =" << yourScore << endl;
+	cout << "My score = " << myScore << " Your score = " << yourScore << endl;
 
 	BadSwap(myScore, yourScore);
 
@@ -22,7 +22,7 @@ int main()
 	cout << "My score = " << myScore << " Your score = " << yourScore << endl;
 
 	cout << "\nBefore the good swap!\n ";
-	cout << "My score =" << myScore << " Your score =" << yourScore << endl;
+	cout << "My score =" << myScore << " Your score = " << yourScore << endl;
 	
 	GoodSwap(myScore, yourScore);
 
@@ -38,7 +38,6 @@ void BadSwap(int myScore, int yourScore)
 {
 	//Swap scores
     // You a temp friend!
-	BadSwap(myScore, yourScore);
 	int temp = 0;
 	// 1. Hand data to temp from myScore
 	temp = myScore;
@@ -53,7 +52,6 @@ void GoodSwap(int &myScore, int &yourScore)
 {
 	//Swap scores
 	// You a temp friend!
-	BadSwap(myScore, yourScore);
 	int temp = 0;
 	// 1. Hand data to temp from myScore
 	temp = myScore;
